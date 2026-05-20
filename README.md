@@ -59,49 +59,87 @@ Logique métier + IA
 Base de données (MariaDB)
 
  5. Architecture de déploiement (Docker)
+
 L’application est entièrement conteneurisée :
 
 frontend : React + Nginx
+
 backend : Spring Boot
+
 database : MariaDB
+
 network : réseau Docker dédié
 
  6. Instructions d’exécution du projet
+   
  1. Cloner le projet
+    
 git clone https://github.com/FatimaEzzahrae-design/garage-voitures-fullstack.git
+
 cd garage-voitures-fullstack
- 2. Lancer l’application avec Docker Compose
+
+ 3. Lancer l’application avec Docker Compose
+    
 docker-compose up --build
 
  7. Accès à l’application
+    
 Composant	            URL
+
 Interface utilisateur	http://localhost:3000
+
 API Backend         	 http://localhost:8081
+
 Recommandation IA	    http://localhost:8081/api/ai/recommend?budget=100000&usage=ville
 
- 8. Technologies utilisées
+ 9. Technologies utilisées
+     
 - Backend
+  
 Java 17
+
 Spring Boot 3
+
 Spring Data JPA
+
 Hibernate
+
 REST API
+
 - Frontend
+
 React.js
+
 Axios
+
 HTML / CSS
+
 - Base de données
+  
 MariaDB
+
 - DevOps
+  
 Docker
+
 Docker Compose
+
 Nginx
+
  9. Configuration de la base de données
+
 spring.datasource.url=jdbc:mariadb://mariadb:3306/nom_db
+
 spring.datasource.username=root
+
 spring.datasource.password=1234
- 10. Structure du projet
+
+ 11. Structure du projet
+     
 backend/
+
 frontend/
+
 docker-compose.yml
+
 README.md
