@@ -71,7 +71,9 @@ database : MariaDB
 network : réseau Docker dédié
 
  6. Instructions d’exécution du projet
-   
+
+En suivant les étapes suivantes:
+
 1. Cloner le projet
     
 git clone https://github.com/FatimaEzzahrae-design/garage-voitures-fullstack.git
