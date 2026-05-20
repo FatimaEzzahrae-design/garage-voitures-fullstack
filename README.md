@@ -49,9 +49,13 @@ Une liste de véhicules classés avec un score de pertinence
  4. Architecture du système
 
 L’application suit une architecture en trois couches :
+
 Interface utilisateur (React)
+
 API REST (Spring Boot)
+
 Logique métier + IA
+
 Base de données (MariaDB)
 
  5. Architecture de déploiement (Docker)
