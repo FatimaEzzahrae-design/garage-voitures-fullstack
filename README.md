@@ -27,19 +27,15 @@ Implémenter un module de recommandation intelligent basé sur des règles méti
 Le système de recommandation ne repose pas sur une bibliothèque d’IA externe, mais sur une logique métier avancée de scoring.
 
 - Entrées :
-Budget de l’utilisateur
-Type d’usage (ville, famille)
+     Budget de l’utilisateur
+     Type d’usage (ville, famille)
 - Logique de calcul :
-
 Chaque véhicule est évalué selon :
-
-Adéquation du prix avec le budget
-Pertinence par rapport à l’usage
-Critères techniques du véhicule (marque, modèle, année)
+     Adéquation du prix avec le budget
+     Pertinence par rapport à l’usage
+     Critères techniques du véhicule (marque, modèle, année)
 - Sortie :
-
 Une liste de véhicules classés avec un score de pertinence
-
  Exemple de résultat :
 {
   "voiture": {
@@ -53,14 +49,12 @@ Une liste de véhicules classés avec un score de pertinence
  4. Architecture du système
 
 L’application suit une architecture en trois couches :
-
 Interface utilisateur (React)
 API REST (Spring Boot)
 Logique métier + IA
 Base de données (MariaDB)
 
  5. Architecture de déploiement (Docker)
-
 L’application est entièrement conteneurisée :
 
 frontend : React + Nginx
@@ -70,7 +64,7 @@ network : réseau Docker dédié
 
  6. Instructions d’exécution du projet
  1. Cloner le projet
-git clone https://github.com/VOTRE_COMPTE/garage-voitures-fullstack.git
+git clone https://github.com/FatimaEzzahrae-design/garage-voitures-fullstack.git
 cd garage-voitures-fullstack
  2. Lancer l’application avec Docker Compose
 docker-compose up --build
@@ -78,7 +72,7 @@ docker-compose up --build
  7. Accès à l’application
 Composant	            URL
 Interface utilisateur	http://localhost:3000
-API Backend         	http://localhost:8081
+API Backend         	 http://localhost:8081
 Recommandation IA	    http://localhost:8081/api/ai/recommend?budget=100000&usage=ville
 
  8. Technologies utilisées
