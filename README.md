@@ -76,7 +76,7 @@ network : réseau Docker dédié
     
 git clone https://github.com/FatimaEzzahrae-design/garage-voitures-fullstack.git
 
-cd garage-voitures-fullstack
+ 2. cd garage-voitures-fullstack
 
  3. Lancer l’application avec Docker Compose
     
